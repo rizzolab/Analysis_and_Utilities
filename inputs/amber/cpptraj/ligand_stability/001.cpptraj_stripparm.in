@@ -1,0 +1,5 @@
+#generates a stripped parm file
+parm /export/home/jbickel/2021.03.25.6lxt_new_md/first/001.tleap/second_acid_combined_wet.parm
+parmstrip :WAT:Na+:Cl-
+
+parmwrite out second_stripped.parm

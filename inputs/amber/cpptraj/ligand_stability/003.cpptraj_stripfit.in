@@ -1,0 +1,13 @@
+#makes a stripped netcdf trajectory
+parm /export/home/jbickel/2021.03.25.6lxt_new_md/first/001.tleap/second_combined_wet.parm
+trajin /export/home/jbickel/2021.03.25.6lxt_new_md/first/001.tleap/second_combined_wet.rst7
+trajin ../002.mhe_md/md1.trj
+
+autoimage
+
+strip :WAT:Na+:Cl-
+
+rmsd rms1 first :1-309@CA
+
+trajout second_prot_stripfit_imaged.nc nobox
+

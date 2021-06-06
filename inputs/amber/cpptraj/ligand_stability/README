@@ -1,0 +1,14 @@
+Purpose: Running cpptraj to isolate the protein and ligand from an MD simulation and extract RMSD values per frame for later analysis. 
+#Author Name: John Bickel
+#Affiliation: Rizzo Lab, Stony Brook University
+
+This set of files is for generating:
+
+A parm file stripped of ions and water.
+A coordinate file (saved as .rst7) stripped of ions of water.
+A stripped trajectory (saved as netcdf, .nc) stripped of ions and water and fit to first frame, which is the pre-minimization frame
+RMSD's of the ligand and protein.
+
+I use this with run_cpptraj.sh, which currently has the functionality of replacing parts of each path in each file (${1} and ${2} from the command line). You can remove this functionality if it doesn't suit you - I use this to run a bunch of different simulations at the same time. 
+
+You can also run them manually by calling the same commands listed in the .sh submit script - in that case you just run them in order, 001 to 004. 

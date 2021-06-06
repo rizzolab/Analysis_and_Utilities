@@ -1,0 +1,11 @@
+This directory contains the script and font files necessary to:
+
+*Generate 2D images of structures.
+*Combine the 2D images, the graphical footprint, and the molecule header.
+*Output a PDF of combined images in the order given by the multimol2.
+
+Required inputs:
+
+*Multimol2 of docked molecules
+*Pre-generated PNGs of footprints as individual files, with names matching that of the multimol2 headers.
+*Rdkit in your Anaconda environment

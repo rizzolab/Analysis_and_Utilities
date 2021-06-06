@@ -1,0 +1,11 @@
+Collection of data with example output from RMSD plotting.
+
+PDB Code: TC5B
+
+Input data:
+rmsd.tc5b.ref_init.2-19.bb.dat			RMSD to reference pose
+rmsd.tc5b.ref_native.2-19.bb.dat		RMSD to native pose
+
+Output:
+rmsd_to_native_boxcar.png			Boxcar averaged graph overlaid with raw
+rmsd_population_density_histogram.png		Population histogram of RMSDs
