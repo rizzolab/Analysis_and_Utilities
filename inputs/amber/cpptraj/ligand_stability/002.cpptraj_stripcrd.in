@@ -1,0 +1,9 @@
+#generates a stripped rst7 coordinate file
+parm /export/home/jbickel/2021.03.25.6lxt_new_md/first/001.tleap/second_acid_combined_wet.parm
+trajin /export/home/jbickel/2021.03.25.6lxt_new_md/first/001.tleap/second_acid_combined_wet.rst7
+strip :WAT:Na+:Cl-
+
+autoimage
+
+trajout second_prot_stripfit_imaged.rst7 nobox
+
